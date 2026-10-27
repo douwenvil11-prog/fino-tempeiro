@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fino Tempero Marmitaria | Comida Caseira em MCR</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #FFF8F0; /* Fundo creme clarinho */
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #C62828; /* Vermelho forte */
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 4px solid #FFA000; /* Laranja */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 800;
+            color: #FFA000;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .logo-text span {
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            /* Fundo com imagem de comida caseira */
+            background: linear-gradient(rgba(198, 40, 40, 0.85), rgba(198, 40, 40, 0.95)), url('https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 30px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 50px;
+            font-size: 16px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+        }
+
+        /* Seção de Informações (Horário / Destaque) */
+        .info-bar {
+            background-color: #FFA000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Seção do Cardápio */
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            color: #C62828;
+            margin: 40px 0 20px 0;
+            font-weight: 800;
+        }
+
+        .cardapio-container {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .prato-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid #C62828;
+        }
+
+        .prato-card h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .prato-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .precos {
+            display: flex;
+            gap: 15px;
+            font-weight: 800;
+            color: #C62828;
+            font-size: 15px;
+        }
+
+        /* Destaque Feijoada */
+        .destaque-sabado {
+            background-color: #C62828;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .destaque-sabado h2 {
+            color: #FFA000;
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">Fino <span>Tempero</span></div>
+    </header>
+
+    <section class="hero">
+        <h1>Comida caseira de verdade, do jeito que você gosta!</h1>
+        <p>Cardápios diferentes todos os dias. Peça já a sua marmita e receba quentinha.</p>
+        <!-- Link do WhatsApp direto da bio deles -->
+        <a href="https://wa.me/5545999285794" class="btn-whatsapp" target="_blank">Pedir pelo WhatsApp</a>
+    </section>
+
+    <div class="info-bar">
+        🕒 Entregas das 11:00 às 13:00 | 🛵 Pedidos pelo WhatsApp
+    </div>
+
+    <h2 class="section-title">O Que Tem Hoje?</h2>
+    
+    <section class="cardapio-container">
+        <div class="prato-card">
+            <h3>🍛 Prato do Dia</h3>
+            <p>Arroz, feijão, macarrão, e a proteína do dia (consulte no WhatsApp). Acompanha salada e batata.</p>
+            <div class="precos">
+                <span>P: R$ 20,00</span>
+                <span>M: R$ 23,00</span>
+                <span>G: R$ 27,00</span>
+            </div>
+        </div>
+
+        <div class="prato-card">
+            <h3>🍝 Macarrão com Brócolis</h3>
+            <p>Uma opção deliciosa e cremosa, perfeita para variar o almoço.</p>
+            <div class="precos">
+                <span>Consulte o tamanho</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="destaque-sabado">
+        <h2>🔥 Sábado é Dia de Feijoada!</h2>
+        <p>Não perca a nossa feijoada completa com arroz, couve, farofa, torresmo e laranja. Peça já a sua!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fino Tempero Marmitaria. Todos os direitos reservados.</p>
+        <p>Atendimento: (45) 99928-5794</p>
+    </footer>
+
+</body>
+</html>
